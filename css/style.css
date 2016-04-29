@@ -1,5 +1,6 @@
 *{
   font-family: Monospace;
+  box-sizing:border-box;
 }
 #logo{
   width: 80px;
@@ -18,11 +19,37 @@
   background-color: rgb(70, 65, 65)
 }
 
-.col-img{
+.sm-img{
+
+  position: relative;
   margin-top: 20px;
 }
+.sm-img:hover > p{
+  display: block;
+}
 
-.col-img:hover{
-  opacity: 0.7;
-  
+.simg{
+  border-radius: 7px;
+  display: block;
+  width: 100%;
+}
+.overtxt{
+  border-radius: 7px;
+  display: none;
+  height: 100%;
+  width: 90%;
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  font-size: 16px;
+  text-align: center;
+  padding: 25% 0 0;
+  margin-left: 15px;
+}
+
+.distribucion{
+  margin-top:30px;
+  text-align: justify;
 }
