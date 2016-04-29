@@ -9,7 +9,7 @@
   </head>
   <body>
     <header  >
-      <div class="container" id="menu">
+      <div class="container-fluid" id="menu">
         <nav id='top-menu' class="navbar navbar-default">
           <!--Logotipo-->
           <div class="navbar-header">
@@ -33,57 +33,68 @@
         </nav>
       </div>
   </header>
-  <div id="slider" >
-    <div class="col-md-12">
-      <div id="carousel-1" class="carousel slide" data-ride="carousel" >
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-1" data-slide-to="1"></li>
-          <li data-target="#carousel-1" data-slide-to="2"></li>
-        </ol>
+  <div class="poster">
+    <div id="q" class="container">
+      <div class="col-md-12">
+        <div id="carousel-1" class="carousel slide" data-ride="carousel" >
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Contenedor de los slide -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/slider1.jpg" class="img-responsive"/>
-            <div class="carousel-caption">
-              <h3>Ubuntu or Fedora?</h3>
-              <p>
-                Hola qué tal, ubuntu o fedora?
-              </p>
+          <!-- Contenedor de los slide -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/slider1.jpg" class="img-responsive"/>
+              <div class="carousel-caption">
+                <h3>Ubuntu or Fedora?</h3>
+                <p>
+                  Hola qué tal, ubuntu o fedora?
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/slider2.jpg" class="img-responsive"/>
+              <div class="carousel-caption">
+                <h3>Ubuntu</h3>
+                <p>
+                  que es ubuntu?
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/slider3.jpg" class="img-responsive"/>
+              <div class="carousel-caption">
+                <h3>Fedora?</h3>
+                <p>
+                  que es fedora?
+                </p>
+              </div>
             </div>
           </div>
-          <div class="item">
-            <img src="images/slider2.jpg" class="img-responsive"/>
-            <div class="carousel-caption">
-              <h3>Ubuntu</h3>
-              <p>
-                que es ubuntu?
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="images/slider3.jpg" class="img-responsive"/>
-            <div class="carousel-caption">
-              <h3>Fedora?</h3>
-              <p>
-                que es fedora?
-              </p>
-            </div>
-          </div>
+          <!-- Controles -->
+          <a href="#carousel-1" class="left carousel-control hidden-xs" role="button" data-slide="prev">
+            <span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a href="#carousel-1" class="right carousel-control hidden-xs" role="button" data-slide="next">
+            <span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
         </div>
-        <!-- Controles -->
-        <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-          <span class=" glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-          <span class=" glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Siguiente</span>
-        </a>
       </div>
     </div>
   </div>
+  <div class="container">
+    <img src="images/sm-img1.jpg" class="img-rounded col-img col-md-3" width="280" height="160">
+    <img src="images/sm-img1.jpg" class="img-rounded col-img col-md-3" width="280" height="160">
+    <img src="images/sm-img1.jpg" class="img-rounded col-img col-md-3" width="280" height="160">
+    <img src="images/sm-img1.jpg" class="img-rounded col-img col-md-3" width="280" height="160">
+
+  </div>
+
+
     <script src="js/code.js" charset="utf-8"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
