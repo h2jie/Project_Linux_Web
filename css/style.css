@@ -16,7 +16,7 @@
 
 #top-menu{
   font-size: 20px;
-  background-color: rgb(70, 65, 65)
+  background-color: rgb(70, 65, 65);
 }
 
 .sm-img{
@@ -52,4 +52,23 @@
 .distribucion{
   margin-top:30px;
   text-align: justify;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.icon-dis{
+  margin-top: 10px;
+  -moz-transition:all linear 1s 0.2s;
+  -webkit-transition:all linear 1s 0.2s;
+  transition:all ease 0.5s 0s;
+}
+.icon-dis:hover{
+  -webkit-transform: scale(1.2,1.2);
+  -webkit-transition-duration: 1s;
+}
+
+.pie{
+  background-color: rgb(27, 40, 58);
+  margin-top: 50px;
+  color: #ffffff;
 }
