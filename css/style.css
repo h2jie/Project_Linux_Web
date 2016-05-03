@@ -10,7 +10,7 @@
 }
 
 .poster{
-  background: url("../images/poste.jpg");
+  background: url("../media/images/inicio/poste.jpg");
   position: relative;
   text-align: center;
 }
@@ -61,7 +61,7 @@
 }
 
 .poster2{
-  background: url(../images/cyan.png);
+  background: url(../media/images/inicio/cyan.png);
   margin-bottom: 50px;
 }
 
@@ -79,3 +79,12 @@
 /*=======================================================================*/
 
 /*Pagina de Noticias*/
+
+.img-news{
+  height: 250px;
+}
+
+.sub-img-news{
+  height: 200px;
+
+}
