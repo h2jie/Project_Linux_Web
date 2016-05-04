@@ -63,6 +63,7 @@ footer{
 
 }
 
+
 .distribucion{
   margin-top:65px;
   padding-top: 65px;
@@ -93,4 +94,9 @@ footer{
 .sub-img-news{
   height: 200px;
 
+}
+
+
+.sub{
+  width: 100px;
 }
