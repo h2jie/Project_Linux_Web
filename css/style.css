@@ -1,8 +1,17 @@
-/*Pagina Principal*/
+/*General*/
+
+footer{
+  margin-top: 50px;
+}
+
 *{
   font-family: Monospace;
   box-sizing:border-box;
 }
+
+/*=========================================================================*/
+
+/*Pagina Principal*/
 #logo{
   width: 80px;
   height: 80px;
@@ -46,7 +55,7 @@
   text-align: center;
   padding: 25% 0 0;
   margin-left: 14px;
-  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
 
 }
 .overtxt:hover{
@@ -62,18 +71,15 @@
 
 .poster2{
   background: url(../media/images/inicio/cyan.png);
-  margin-bottom: 50px;
 }
 
 .icon-dis{
-  margin-top: 10px;
-  margin-left: 75px;
-  -webkit-transition:all linear 1s 0.2s;
+  transition:all linear 1s 0.2s;
   transition:all ease 0.5s 0s;
 }
 .icon-dis:hover{
-  -webkit-transform: scale(1.2,1.2);
-  -webkit-transition-duration: 1s;
+  transform: scale(0.7,0.7);
+  transition-duration: 1s;
 }
 
 /*=======================================================================*/
