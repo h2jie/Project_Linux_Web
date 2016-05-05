@@ -87,7 +87,14 @@ footer{
 /*Pagina de Noticias*/
 
 .img-news{
+  transition:all linear 1s 0.2s;
+  transition:all ease 0.5s 0s;
+  overflow: hidden;
   height: 250px;
+}
+.img-news:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: 1s;
 }
 
 .sub-img-news{
@@ -105,5 +112,11 @@ footer{
 
 .titulo{
   height: 300px;
-  background: url("../media/images/historia/linux.jpg")
+  background: url("../media/images/historia/linux.jpg");
+  font-size: 40px;
+  padding-top:7.5%;
+}
+
+.tablas{
+  margin-top: 10px;
 }
