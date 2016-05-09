@@ -2,11 +2,16 @@ var demo_top = "media/videos/demo_top.webm";
 var demo_ifconfig = "media/videos/demo_ifconfig.webm";
 var demo_ls = "media/videos/demo_ls.webm";
 
+Vue.transition('animacion',{
+  enterClass: 'bounceInDown',
+  leaveClass: 'fadeOutUp',
+});
+
 new Vue({
   el: 'body',
   data:{
     message: '',
-
+    mostrar_mensaje: false,
     comandos:[
       {nombre:'cat', descripcion:'Funcion: Nos permite visualizar el contenido de un archivo de texto sin la necesidad de un editor', demos:'' },
       {nombre:'ifconfig', descripcion:'Funcion: Verificar estado de la red', demos:demo_ifconfig},
@@ -15,3 +20,15 @@ new Vue({
     ],
   },
 })
+
+
+
+// function showHide() {
+//   var oDiv=document.getElementById('sobre');
+//   if(oDiv.style.display=='block'){
+//     oDiv.style.display='none';
+//   }
+//   else {
+//     oDiv.style.display='block';
+//   }
+// }

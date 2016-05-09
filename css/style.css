@@ -125,6 +125,47 @@ footer{
 
 /*Pagina de distribucion*/
 
-.logo{
+
+
+.quees{
+  background: #de4815;
+  height: 200px;
+
+}
+
+.ubuntu-txt-color{
+  color: white;
+  font-size: 80px;
   text-align: center;
+  padding-top: 3%;
+}
+
+.ubuntu-descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.58);
+  padding: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 10px 10px #de4815;
+}
+
+.caract-ubuntu{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #ff5722;
+  text-align: justify;
+}
+
+.caract-color{
+  margin-top: 50px;
+  border-left: 5px #ff5722 solid;
+}
+
+#btn-ubuntu{
+
+
+  background: #ff5722;
+}
+
+#btn-ubuntu > a{
+  text-decoration: none;
+  color: white;
 }
