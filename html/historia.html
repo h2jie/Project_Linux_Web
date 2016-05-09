@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animate.css">
   <script src="../js/vuejs.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <title>Historia</title>
@@ -13,7 +14,7 @@
   <!-- menu principal -->
   <header>
     <div class="container-fluid" id="menu">
-      <nav id='top-menu' class="navbar navbar-default">
+      <nav id='top-menu' class="navbar navbar-inverse">
         <!--Logotipo-->
         <div class="navbar-header">
           <img id='logo' src="../media/images/inicio/bombilla.png">
@@ -40,15 +41,21 @@
   <!-- titulo -->
   <div class="container-fluid">
     <div class="titulo">
-      <img src="../media/images/historia/GNU.png" class="img-responsive col-md-4" alt="">
-      <p class="text-center col-md-4" style="color:white;font-family: Inconsolata;">Historia de GNU/Linux</p>
+      <p class="text-center" style="color:white;font-family: Inconsolata;">Historia de GNU/Linux</p>
     </div>
   </div>
 
+<!-- Boton para mostrar tabla de Linux -->
+  <button type="button" name="button" style='margin-top: 20px' class="btn btn-danger col-md-12" @click='mostrar_linux = !mostrar_linux'>
+    Mostrar informacion sobre Linux
+    <span class="glyphicon glyphicon-chevron-up text-center" v-show='mostrar_linux == true' @click='mostrar_linux = !mostrar_linux' ></span>
+    <span class="glyphicon glyphicon-chevron-down text-center" v-show='mostrar_linux == false' @click='mostrar_linux = !mostrar_linux' ></span>
+  </button>
+
   <!-- tablas informativas Linux -->
   <div class="container-fluid">
-    <div class="col-md-4 tablas">
-      <table class="table">
+    <div class="col-md-4 tablas ">
+      <table class="table animated" transition='animacion' v-show='mostrar_linux'>
         <tr>
           <th class="bg-primary">¿Qué es Linux?</th>
         </tr>
@@ -62,7 +69,7 @@
     </div>
 
     <div class="col-md-5 tablas">
-      <table class="table">
+      <table class="table animated" transition='animacion' v-show='mostrar_linux'>
         <tr>
           <th class="bg-primary">Historia (Linux)</th>
         </tr>
@@ -77,33 +84,43 @@
     </div>
 
     <div class="col-md-2 tablas">
-      <table class="table">
+      <table class="table animated"  transition='animacion' v-show='mostrar_linux'>
         <tr>
           <th class="bg-primary">Linus Torvalds-(Creador del núcleo Linux)</th>
         </tr>
         <tr>
           <td>
-            <img src="/home/ism1152175/Documentos/Proyecto_hang/Project_Linux_Web/media/images/historia/Linus_Torvalds.jpeg" alt="Linus_Torvalds" style="width:250px;height:320px"/></td>
+            <img src="../media/images/historia/Linus_Torvalds.jpeg" alt="Linus_Torvalds" style="width:250px;height:320px"/>
+          </td>
         </tr>
       </table>
     </div>
   </div>
 
+<!-- Boton para mostrar tabla de GNU -->
+  <button type="button" name="button" style='margin-top: 20px' class="btn btn-danger col-md-12 text-center" @click='mostrar_GNU = !mostrar_GNU'>
+    Mostrar informacion sobre GNU
+    <span class="glyphicon glyphicon-chevron-up" v-show='mostrar_GNU == true' @click='mostrar_GNU = !mostrar_GNU' ></span>
+    <span class="glyphicon glyphicon-chevron-down" v-show='mostrar_GNU == false' @click='mostrar_GNU = !mostrar_GNU' ></span>
+  </button>
+
   <!-- Tablas informativas GNU -->
   <div class="container-fluid">
     <div class="col-md-4 tablas">
-      <table class="table">
+      <table class="table animated" transition='animacion' v-show='mostrar_GNU'>
         <tr>
           <th class="bg-primary">¿Qué es GNU?</th>
         </tr>
         <tr>
-          <td>El acrónimo recursivo GNU, GNU's Not Unix (GNU no es Unix), proviene de las herramientas básicas de sistema operativo creadas por el proyecto GNU, iniciado por Richard Stallman en 1983 y mantenido por la FSF. El nombre Linux viene del núcleo Linux, inicialmente escrito por Linus Torvalds en 1991.</td>
+          <td>El acrónimo recursivo GNU, GNU's Not Unix (GNU no es Unix), proviene de las herramientas básicas de sistema operativo creadas por el proyecto GNU, iniciado por Richard Stallman en 1983 y mantenido por la FSF. El nombre Linux viene del núcleo Linux, inicialmente escrito por Linus Torvalds en 1991.
+          <img src="../media/images/historia/GNU.png" style='width:50%; height:50%; margin-left:20%' class="img-responsive" alt="">
+          </td>
         </tr>
       </table>
     </div>
 
     <div class="col-md-5 tablas">
-      <table class="table">
+      <table class="table animated" transition='animacion' v-show='mostrar_GNU'>
         <tr>
           <th class="bg-primary">Historia (GNU)</th>
         </tr>
@@ -114,7 +131,7 @@
     </div>
 
     <div class="col-md-2 tablas">
-      <table class="table">
+      <table class="table animated" transition='animacion' v-show='mostrar_GNU'>
         <tr>
           <th class="bg-primary">Richard Stallman-(Fundador del Movimiento del software libre, de la FSF y del Proyecto GNU.)</th>
         </tr>
