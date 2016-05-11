@@ -115,6 +115,7 @@ footer{
   border-radius: 5px;
   width: 900px;
   background: rgba(158, 158, 158, 0.13);
+
 }
 .n-img{
   margin-top: 20px;
@@ -144,7 +145,7 @@ footer{
 
 /*Pagina de Ubuntu*/
 
-.quees{
+.queesUb{
   background: #de4815;
   height: 200px;
 }
@@ -170,7 +171,7 @@ footer{
   text-align: justify;
 }
 
-.caract-color{
+.caract-color-ubuntu{
   margin-top: 50px;
   border-left: 5px #ff5722 solid;
 }
