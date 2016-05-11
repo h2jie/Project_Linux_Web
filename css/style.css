@@ -13,20 +13,22 @@ footer{
 
 /*Pagina Principal*/
 #logo{
-  width: 80px;
-  height: 80px;
-  padding: 5px;
+  width: 55px;
+  height: 55px;
+  padding: 3px;
 }
 
-.poster{
+#poster{
   background: url("../media/images/inicio/poste.jpg");
   position: relative;
   text-align: center;
 }
 
 #top-menu{
-  font-size: 20px;
-  background-color: rgb(70, 65, 65);
+  font-size: 16px;
+  border-radius: 0px;
+  border: none;
+  background: #5F5F5F;
 }
 
 .sm-img{
@@ -113,10 +115,84 @@ footer{
 .titulo{
   height: 300px;
   background: url("../media/images/historia/linux.jpg");
-  font-size: 40px;
+  font-size: 60px;
   padding-top:7.5%;
 }
 
 .tablas{
   margin-top: 10px;
+}
+
+/*=======================================================================*/
+
+/*Opciones generales Distribuciones*/
+
+.txt-color{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.58);
+  padding: 40px 40px 40px 40px;
+}
+
+
+
+/*Pagina de Ubuntu*/
+
+.queesUb{
+  background: #de4815;
+  height: 200px;
+}
+
+.caract-ubuntu{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #ff5722;
+  text-align: justify;
+}
+
+.caract-color-ubuntu{
+  margin-top: 50px;
+  border-left: 5px #ff5722 solid;
+}
+
+#btn-ubuntu{
+  background: #ff5722;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+
+/*pagina fedora*/
+
+.queesFed{
+  background: #082640;
+  height: 200px;
+}
+
+.caract-fedora{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #082640;
+  text-align: justify;
+  color: white;
+  background: rgba(6, 4, 5, 0.57);
+}
+
+.caract-color-fedora{
+  margin-top: 50px;
+  border-left: 5px #082640 solid;
+  color: white;
+}
+
+#btn-fedora{
+  background: #082640;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
