@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/vuejs.js"></script>
-    <title>Ubuntu</title>
+    <title>openSUSE</title>
   </head>
-  <body background="../media/images/distribuciones/ubuntu/ubuntu-background-paper.png">
+  <body background="../media/images/distribuciones/opensuse/opensuse-background-paper.png">
     <header>
       <div class="container-fluid" id="menu">
-        <nav id='top-menu' class="navbar navbar-default">
+        <nav id='top-menu' class="navbar navbar-inverse">
           <!--Logotipo-->
           <div class="navbar-header">
             <img id='logo' src="../media/images/inicio/bombilla.png">
@@ -23,26 +23,25 @@
             <li><a href="noticias.html">Noticias</a></li>
             <li><a href="historia.html">Historia</a></li>
             <!--Boton desplegable-->
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Distribuciones<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="fedora.html">Fedora</a></li>
                 <li><a href="ubuntu.html">Ubuntu</a></li>
-                <li><a href="os.html">OpenSUSE</a></li>
-                <li><a href="lm.html">linux Mint</a></li>
+                <li class="active"><a href="opensuse.html">OpenSUSE</a></li>
+                <li><a href="linuxmint.html">linux Mint</a></li>
               </ul>
             </li>
-            <li><a href="buscador.html">Comandos</a></li>
           </ul>
         </nav>
       </div>
     </header>
       <center>
-        <img class="animated bounceInDown" align="center" src="../media/images/distribuciones/ubuntu/ubuntu_logo.png" alt="" />
+        <img class="animated bounceInDown" align="center" src="../media/images/distribuciones/opensuse/opensuse_Logo.png" alt="" />
       </center>
 
-      <div class="quees container">
-        <p class="ubuntu-txt-color">
+      <div class="os-quees container">
+        <p class="os-txt-color">
           ¿Qué es?
         </p>
         <center>
@@ -51,7 +50,7 @@
         </center>
       </div>
 
-      <div class="container ubuntu-descripcion animated" transition='animacion2' v-show='mostrar_mensaje'>
+      <div class="container os-descripcion animated" transition='animacion2' v-show='mostrar_mensaje'>
         <p>
           Ubuntu es un sistema operativo basado en GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. Su nombre proviene de la ética homónima, en la que se habla de la existencia de uno mismo como cooperación de los demás.
         </p>
@@ -63,21 +62,21 @@
         </p>
       </div>
 
-      <h1 class="container caract-color">Características</h1>
+      <h1 class="container caract-color-os">Características</h1>
 
-      <div class="container caract-ubuntu">
+      <div class="container caract-os">
         <h3>Ubuntu y la comunidad</h3>
         <p>
           Los usuarios pueden participar en el desarrollo de Ubuntu, escribiendo código, solucionando bugs, probando versiones inestables del sistema, etc. Además, en febrero de 2008 se puso en marcha el sitio Brainstorm que permite a los usuarios proponer sus ideas y votar las del resto. También se informa de las ideas propuestas que se están desarrollando o están previstas.
         </p>
       </div>
-      <div class="container caract-ubuntu">
+      <div class="container caract-os">
         <h3>Software incluido</h3>
         <p>
           Ubuntu posee una gran gama de aplicaciones para llevar a cabo tareas cotidianas, entretenimiento, desarrollo y aplicaciones para la configuración de todo el sistema. La interfaz predeterminada de Ubuntu es Unity y utiliza en conjunto las aplicaciones de GNOME. Existen otras versiones extraoficiales mantenidas por la comunidad, con diferentes escritorios, y pueden ser instalados independientemente del instalado predefinido en Ubuntu.
         </p>
       </div>
-      <div class="container caract-ubuntu">
+      <div class="container caract-os">
         <h3>Organización del software</h3>
         <p>
           Ubuntu internamente divide todo el software en cuatro secciones, llamadas "componentes", para mostrar diferencias en licencias y la prioridad con la que se atienden los problemas que informen los usuarios. Estos componentes son: main, restricted, universe y multiverse.
@@ -87,8 +86,8 @@
         </p>
       </div>
 
-      <h1 class="container caract-color">Diseño de interfaz de usuario</h1>
-      <div class="container caract-ubuntu">
+      <h1 class="container caract-color-os">Diseño de interfaz de usuario</h1>
+      <div class="container caract-os" style="padding-top:15px">
         <p>
           La actual interfaz de usuario de Ubuntu está compuesta por tres elementos: la barra superior para indicadores de sistema y menús (compuesta de Aplicaciones, Lugares y Sistema), el lanzador de aplicaciones al costado izquierdo, y el tablero que despliega accesos a aplicaciones y medios.
         </p>
@@ -98,7 +97,7 @@
       </div>
 
       <center style="margin-top: 20px;">
-        <a href="http://www.ubuntu.com/" id='btn-ubuntu' target='_blank'>Descargatelo ya</a>
+        <a href="https://www.opensuse.org/" id='btn-os' target='_blank'>Descargatelo ya</a>
       </center>
 
 

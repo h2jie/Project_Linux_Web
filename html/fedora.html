@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/vuejs.js"></script>
     <title>Fedora</title>
-    <style media="screen">
-      body{
-        background: url('../media/images/distribuciones/fedora/background.png');
-        background-
-      }
-    </style>
   </head>
-  <body>
+  <body background="../media/images/distribuciones/fedora/background.png">
     <header>
       <div class="container-fluid" id="menu">
         <nav id='top-menu' class="navbar navbar-inverse">
@@ -29,13 +23,14 @@
             <li><a href="noticias.html">Noticias</a></li>
             <li><a href="historia.html">Historia</a></li>
             <!--Boton desplegable-->
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Distribuciones<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="fedora.html">Fedora</a></li>
+                <li class="active"><a href="fedora.html">Fedora</a></li>
                 <li><a href="ubuntu.html">Ubuntu</a></li>
-                <li><a href="os.html">OpenSUSE</a></li>
-                <li><a href="lm.html">linux Mint</a></li>
+                <li><a href="opensuse.html">OpenSUSE</a></li>
+                <li><a href="linuxmint.html">linux Mint</a></li>
               </ul>
             </li>
             <li><a href="buscador.html">Comandos</a></li>
@@ -43,12 +38,13 @@
         </nav>
       </div>
     </header>
+
       <center>
-        <img class="animated bounceInDown" align="center" src="../media/images/distribuciones/fedora/fedora_logo.png" width='1000' height='600' alt="" />
+        <img class="animated bounceInDown" align="center" src="../media/images/distribuciones/fedora/fedora_logo.png" width='1000' height='600'/>
       </center>
 
       <div class="queesFed container">
-        <p class="txt-color">
+        <p class="fed-txt-color">
           ¿Qué es?
         </p>
         <center>
@@ -57,7 +53,7 @@
         </center>
       </div>
 
-      <div class="container descripcion animated" style='box-shadow: 1px 1px 10px 10px #082640; background:rgba(6, 4, 5, 0.57);color:white' transition='animacion2' v-show='mostrar_mensaje'>
+      <div class="container def-descripcion animated" transition='animacion2' v-show='mostrar_mensaje'>
         <p>
           Ubuntu es un sistema operativo basado en GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. Su nombre proviene de la ética homónima, en la que se habla de la existencia de uno mismo como cooperación de los demás.
         </p>

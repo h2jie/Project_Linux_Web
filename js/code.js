@@ -9,7 +9,7 @@ argumentos=[
 ]
 
 for (argumento in argumentos){
-  argumento.replace('\n', '<br />')
+  argumento.replace("n", "o")
 }
 
 // descripciones de los comandos
@@ -41,8 +41,6 @@ Vue.transition('animacion2',{
   enterClass: 'bounceInDown',
   leaveClass: 'fadeOutUp',
 });
-
-
 
 new Vue({
   el: 'body',
