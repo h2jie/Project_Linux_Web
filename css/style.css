@@ -1,0 +1,331 @@
+/*General*/
+
+footer{
+  margin-top: 50px;
+}
+
+*{
+  font-family: Monospace;
+  box-sizing:border-box;
+}
+
+/*=========================================================================*/
+
+/*Pagina Principal*/
+#logo{
+  width: 55px;
+  height: 55px;
+  padding: 3px;
+}
+
+#poster{
+  background: url("../media/images/inicio/poste.jpg");
+  position: relative;
+  text-align: center;
+}
+
+#top-menu{
+  font-size: 16px;
+  border-radius: 0px;
+  border: none;
+  background: #5F5F5F;
+}
+
+.sm-img{
+  position: relative;
+  margin-top: 65px;
+}
+.sm-img:hover > p{
+  display: block;
+}
+
+.simg{
+  border-radius: 7px;
+  display: block;
+  width: 100%;
+}
+
+.overtxt{
+  border-radius: 7px;
+  display: none;
+  height: 100%;
+  width: 90%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  font-size: 16px;
+  text-align: center;
+  padding: 25% 0 0;
+  margin-left: 14px;
+  transition-duration: 0.7s;
+
+}
+.overtxt:hover{
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.distribucion{
+  margin-top:65px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.poster2{
+  background: url("../media/images/inicio/cyan.png");
+}
+
+.icon-dis{
+  transition:all linear 1s 0.2s;
+  transition:all ease 0.5s 0s;
+}
+.icon-dis:hover{
+  transform: scale(0.7,0.7);
+  transition-duration: 1s;
+}
+
+/*=======================================================================*/
+
+/*Pagina de Noticias*/
+
+.img-news{
+  transition:all linear 1s 0.2s;
+  transition:all ease 0.5s 0s;
+  overflow: hidden;
+  height: 250px;
+}
+.img-news:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: 1s;
+}
+
+.sub-img-news{
+  height: 200px;
+
+}
+
+.sub{
+  width: 100px;
+}
+
+/*noticias2*/
+.noticia{
+  margin-top: 60px;
+  border: 2px solid rgba(6, 8, 5, 0.17);
+  border-radius: 5px;
+  width: 900px;
+  background: rgba(158, 158, 158, 0.13);
+
+}
+.n-img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contenido{
+  margin-left: 8%;
+  margin-right: 8%;
+
+}
+/*=======================================================================*/
+
+/*Pagina de Historia*/
+
+.titulo{
+  height: 300px;
+  background: url("../media/images/historia/linux.jpg");
+  font-size: 80px;
+  padding-top:5%;
+}
+
+.tablas{
+  margin-top: 10px;
+}
+
+/*=======================================================================*/
+
+/*Pagina de Ubuntu*/
+
+.queesUb{
+  background: #de4815;
+  height: 200px;
+}
+
+.ubuntu-txt-color{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.ubuntu-descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.58);
+  padding: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 10px 10px #de4815;
+}
+
+.caract-ubuntu{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #ff5722;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.caract-color-ubuntu{
+  margin-top: 50px;
+  border-left: 5px #ff5722 solid;
+}
+
+#btn-ubuntu{
+  background: #ff5722;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+/*=======================================================================*/
+
+/*pagina fedora*/
+
+.queesFed{
+  background: #082640;
+  height: 200px;
+}
+
+.def-descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  box-shadow: 1px 1px 10px 10px #082640;
+  background:rgba(6, 4, 5, 0.57);
+  color:white;
+}
+
+.fed-txt-color{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.caract-fedora{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #082640;
+  text-align: justify;
+  color: white;
+  background: rgba(6, 4, 5, 0.57);
+}
+
+.caract-color-fedora{
+  margin-top: 50px;
+  border-left: 5px #082640 solid;
+  color: white;
+}
+
+#btn-fedora{
+  background: #082640;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+
+/*=======================================================================*/
+
+/*Pagina de openSUSE*/
+
+
+
+.os-quees{
+  background: #73ba25;
+  height: 200px;
+}
+
+.os-txt-color{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.os-descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  background: rgba(2, 2, 2, 0.34);
+  padding: 15px ;
+  box-shadow: 1px 1px 10px 10px #73ba25;
+  color: white;
+}
+
+.caract-os{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #73ba25;
+  text-align: justify;
+  /*padding: 15px;*/
+  background: rgba(2, 2, 2, 0.34);
+  color: white;
+}
+
+.caract-color-os{
+  margin-top: 50px;
+  border-left: 5px #73ba25 solid;
+}
+
+#btn-os{
+  padding: 5px;
+  background: #73ba25;
+  text-decoration: none;
+  color: white;
+}
+
+
+/*=======================================================================*/
+
+/*Pagina de linuxmint*/
+
+.no-repeat{
+  background-repeat:round;
+}
+
+.lm-quees{
+  background: #92c03d;
+  height: 200px;
+
+}
+
+.lm-txt-color{
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.lm-descripcion{
+  margin-top: 30px;
+  text-align: justify;
+  background: rgba(2, 2, 2, 0.34);
+  padding: 15px ;
+  box-shadow: 1px 1px 10px 10px #92c03d;
+  color: white;
+}
+
+.caract-lm{
+  margin-top: 20px;
+  box-shadow: 1px 1px 1px 1px #92c03d;
+  text-align: justify;
+  /*padding: 15px;*/
+  background: rgba(2, 2, 2, 0.34);
+  color: white;
+}
+
+.caract-color-lm{
+  margin-top: 50px;
+  border-left: 5px #92c03d solid;
+}
+
+#btn-lm{
+  padding: 5px;
+  background: #92c03d;
+  text-decoration: none;
+  color: white;
+}
