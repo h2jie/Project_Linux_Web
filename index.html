@@ -5,38 +5,38 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../css/animate.css">
     <script src="js/vuejs.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
     <title>Index</title>
   </head>
   <body>
     <header  >
       <div class="container-fluid" id="menu">
-        <nav id='top-menu' class="navbar navbar-default">
+        <nav id='top-menu' class="navbar navbar-inverse">
           <!--Logotipo-->
           <div class="navbar-header">
             <img id='logo' src="media/images/inicio/bombilla.png">
           </div>
           <!--Elementos del menu-->
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
             <li><a href="html/noticias.html">Noticias</a></li>
             <li><a href="html/historia.html">Historia</a></li>
             <!--Boton desplegable-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Distribuciones<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Fedora</a></li>
-                <li><a href="#">Ubuntu</a></li>
-                <li><a href="#">openSUSE</a></li>
-                <li><a href="#">linux Mint</a></li>
+                <li><a href="html/fedora.html">Fedora</a></li>
+                <li><a href="html/ubuntu.html">Ubuntu</a></li>
+                <li><a href="html/opensuse.html">OpenSUSE</a></li>
+                <li><a href="html/linuxmint.html">linux Mint</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
   </header>
-  <div class="poster" id="principal">
+  <div id="poster">
     <div class="container">
       <div class="col-md-12">
         <div id="carousel-1" class="carousel slide" data-ride="carousel" >
@@ -116,10 +116,10 @@
   </div>
   <div class="poster2">
     <div class="container distribucion">
-      <a href="#"><img src="media/images/inicio/ubuntu.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
-      <a href="#"><img src="media/images/inicio/Fedora.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
-      <a href="#"><img src="media/images/inicio/opensuse.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
-      <a href="#"><img src="media/images/inicio/Linux_Mint.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
+      <a href="html/fedora.html"><img src="media/images/inicio/Fedora.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
+      <a href="html/ubuntu.html"><img src="media/images/inicio/ubuntu.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
+      <a href="html/opensuse.html"><img src="media/images/inicio/opensuse.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
+      <a href="html/linuxmint.html"><img src="media/images/inicio/Linux_Mint.png" class="icon-dis img-responsive col-md-3 col-sm-6 col-xs-12" height=""/></a>
     </div>
   </div>
   <footer class="bg-primary">
