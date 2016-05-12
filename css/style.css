@@ -1,11 +1,12 @@
 /*General*/
 
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 footer{
   margin-top: 50px;
 }
 
 *{
-  font-family: Monospace;
   box-sizing:border-box;
 }
 
