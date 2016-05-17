@@ -24,7 +24,7 @@
             <li><a href="historia.html">Historia</a></li>
             <!--Boton desplegable-->
 
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Distribuciones<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li class="active"><a href="fedora.html">Fedora</a></li>
@@ -34,6 +34,7 @@
               </ul>
             </li>
             <li><a href="buscador.html">Comandos</a></li>
+            <li><a href="contact.html">Contactanos</a></li>
           </ul>
         </nav>
       </div>
@@ -55,48 +56,59 @@
 
       <div class="container def-descripcion animated" transition='animacion2' v-show='mostrar_mensaje'>
         <p>
-          Ubuntu es un sistema operativo basado en GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. Su nombre proviene de la ética homónima, en la que se habla de la existencia de uno mismo como cooperación de los demás.
+          Fedora es una distribución Linux para propósitos generales basada en RPM, que se caracteriza por ser un sistema estable, la cual es mantenida gracias a una comunidad internacional de ingenieros, diseñadores gráficos y usuarios que informan de fallos y prueban nuevas tecnologías. Cuenta con el respaldo y la promoción de Red Hat.
         </p>
         <p>
-          Está orientado al usuario promedio, con un fuerte enfoque en la facilidad de uso y en mejorar la experiencia del usuario. Está compuesto de múltiple software normalmente distribuido bajo una licencia libre o de código abierto. Estadísticas web sugieren que la cuota de mercado de Ubuntu dentro de las distribuciones Linux es, aproximadamente, del 49%, y con una tendencia a aumentar como servidor web.
+          El nombre de Fedora deriva de Fedora Linux, un proyecto creado por voluntarios que proveía software adicional a la distribución Red Hat Linux, y del característico sombrero Fedora usado en el logotipo de la distribución comercial. Fedora Linux fue finalmente absorbido en el Proyecto Fedora. Fedora es una marca registrada de Red Hat, aunque esto ha sido previamente disputado por los creadores del proyecto de repositorios Fedora, el problema ha sido resuelto.
         </p>
         <p>
-          Su patrocinador, Canonical, es una compañía británica propiedad del empresario sudafricano Mark Shuttleworth. Ofrece el sistema de manera gratuita, y se financia por medio de servicios vinculados al sistema operativo y vendiendo soporte técnico. Además, al mantenerlo libre y gratuito, la empresa es capaz de aprovechar los desarrolladores de la comunidad para mejorar los componentes de su sistema operativo. Extraoficialmente, la comunidad de desarrolladores proporciona soporte para otras derivaciones de Ubuntu, con otros entornos gráficos, como Kubuntu, Xubuntu, Ubuntu MATE, Edubuntu, Ubuntu Studio, Mythbuntu, Ubuntu GNOME y Lubuntu.
+          El proyecto no busca sólo incluir software libre y de código abierto, sino ser el líder en ese ámbito tecnológico, ya que los desarrolladores de Fedora prefieren hacer cambios en las fuentes originales en lugar de aplicar los parches específicos en su distribución, de esta forma se asegura que las actualizaciones estén disponibles para todas las variantes de Linux. Max Spevack en una entrevista afirmó que: "Hablar de Fedora es hablar del rápido progreso del software libre y de código abierto."
         </p>
       </div>
 
       <h1 class="container caract-color-fedora">Características</h1>
 
       <div class="container caract-fedora">
-        <h3>Ubuntu y la comunidad</h3>
+        <h3>Distribucion</h3>
         <p>
-          Los usuarios pueden participar en el desarrollo de Ubuntu, escribiendo código, solucionando bugs, probando versiones inestables del sistema, etc. Además, en febrero de 2008 se puso en marcha el sitio Brainstorm que permite a los usuarios proponer sus ideas y votar las del resto. También se informa de las ideas propuestas que se están desarrollando o están previstas.
+          El proyecto fedora se distribuye de  muchas formas diferentes:
+        </p>
+        <ul>
+          <li>Fedora DVD --> un DVD con todos los paquetes disponibles.</li>
+          <li>Live CD --> imágenes de CD o DVD que también pueden ser instalados en unidades USB.</li>
+          <li>Imagen de CD o USB --> usado para ser instalado sobre HTTP, FTP o NFS.</li>
+          <li>Imagen de rescate en CD o USB --> usado si alguna parte del sistema ha fallado y requiere ser reparado. También permite instalaciones desde Internet.</li>
+        </ul>
+      </div>
+      <div class="container caract-fedora">
+        <h3>Seguridad</h3>
+        <p>
+          La distribución está liderando las distribuciones que incorporan SELinux, habiéndolo introducido en Fedora Core 2. Sin embargo lo desactivó como elemento predeterminado, pues alteraba radicalmente la forma en que el sistema operativo funcionaba. Posteriormente fue activado por defecto en Fedora Core 3 introduciendo una política menos estricta. Fedora también tiene métodos propios para prevenir la sobrecarga del buffer y la utilización de rootkits. La verificación del buffer en tiempo de compilación, «Exec Shield» y restricciones en como la memoria del núcleo en /dev/mem puede ser accedida ayudan a prevenir esto.
         </p>
       </div>
       <div class="container caract-fedora">
-        <h3>Software incluido</h3>
+        <h3>Repositorios</h3>
         <p>
-          Ubuntu posee una gran gama de aplicaciones para llevar a cabo tareas cotidianas, entretenimiento, desarrollo y aplicaciones para la configuración de todo el sistema. La interfaz predeterminada de Ubuntu es Unity y utiliza en conjunto las aplicaciones de GNOME. Existen otras versiones extraoficiales mantenidas por la comunidad, con diferentes escritorios, y pueden ser instalados independientemente del instalado predefinido en Ubuntu.
-        </p>
-      </div>
-      <div class="container caract-fedora">
-        <h3>Organización del software</h3>
-        <p>
-          Ubuntu internamente divide todo el software en cuatro secciones, llamadas "componentes", para mostrar diferencias en licencias y la prioridad con la que se atienden los problemas que informen los usuarios. Estos componentes son: main, restricted, universe y multiverse.
+          La herramienta habitual, en Fedora, para interactuar con los repositorios a través de línea de comandos se denomina Yum; así mismo existe un entorno gráfico Yum denominado Pirut (para tareas de instalación y eliminación de paquetes) y Pup (para tareas de actualización de paquetes). Yum posee un front-end llamado Yumex.
         </p>
         <p>
-          De forma predeterminada se instalan paquetes de los componentes main y restricted Los paquetes del componente universe de Ubuntu generalmente se basan en los paquetes de la rama inestable (Sid) y en el repositorio experimental de Debian.
+          Actualmente, Fedora recomienda (o utiliza) únicamente aquellos repositorios que disponen de paquetes de software libre, o código abierto, sin problemas de patentes. Ejemplos de paquetes problemáticos a nivel de patentes son determinados códecs de audio, módulos NTFS o drivers de ATI y NVIDIA.
         </p>
       </div>
 
       <h1 class="container caract-color-fedora">Diseño de interfaz de usuario</h1>
       <div class="container caract-fedora" style="padding-top:15px">
         <p>
-          La actual interfaz de usuario de Ubuntu está compuesta por tres elementos: la barra superior para indicadores de sistema y menús (compuesta de Aplicaciones, Lugares y Sistema), el lanzador de aplicaciones al costado izquierdo, y el tablero que despliega accesos a aplicaciones y medios.
+          El escritorio de Fedora 8 irá con estos tiempos tan Web 2.0 integrando el panel Bigboard que integrará en el escritorio varios de los servicios más populares, así como un buen nivel de personalización y fácil acceso a los contenidos (programas, archivos, contactos) en nuestro disco duro.
         </p>
         <p>
-          Además de la interfaz Unity, Canonical ha diseñado varios elementos de la interfaz: set de iconos Ubuntu Mono y Humanity, temas visuales ligeros, tipografía Ubuntu y sus variantes, barras de desplazamiento superpuestas, notificaciones OSD, pantalla de inicio de sesión Unity Greeter, gestos multitáctil uTouch, temas de sonido de inicio de sesión, y los menús globales de aplicaciones
+          Sus interfaces Gráficas más conocidas son:
         </p>
+        <ul>
+          <li>Gnome</li>
+          <li>KDE</li>
+          <li>XFCE</li>
+        </ul>
       </div>
 
       <center style="margin-top: 20px;">

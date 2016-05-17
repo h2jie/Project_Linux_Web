@@ -31,24 +31,25 @@
               <ul class="dropdown-menu">
                 <li><a href="fedora.html">Fedora</a></li>
                 <li><a href="ubuntu.html">Ubuntu</a></li>
-                <li><a href="#">OpenSUSE</a></li>
-                <li><a href="#">linux Mint</a></li>
+                <li><a href="ubuntu.html">Ubuntu</a></li>
+                <li><a href="opensuse.html">OpenSUSE</a></li>
               </ul>
             </li>
             <li class="active"><a href="buscador.html">Comandos</a></li>
+            <li><a href="contact.html">Contactanos</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- <pre>{{$data | json}}</pre> -->
-    <form class="navbar-form text-center" role="search">
-      <div class="form-group bg-primary" style="padding:5px;border-radius:7px">
-        <span class="glyphicon glyphicon-search"></span>
-        <input class="form-control text-center" style='width:800px'  type='text' placeholder='Escribe un comando' v-model="mostrar_comando">
+    <div class="container">
+      <form class="navbar-form text-center bg-primary" style='padding:5px;border-radius:7px;' role="search">
+          <span class="glyphicon glyphicon-search"></span>
+          <input class="form-control text-center" style="width:100%" type='text' placeholder='Escribe un comando' v-model="mostrar_comando">
+      </form>
+    </div>
 
-      </div>
-    </form>
 
     <div class="container text-center animated" transition='animacion2' v-for="comando in comandos" v-show="mostrar_comando.toLowerCase()==comando.nombre">
       <section class="main" id='content'>
@@ -57,7 +58,7 @@
           <br>
           <h2 style="margin-top:-20px">Descripción:</h2>
           <p style="width:100%">{{comando.descripcion}}</p>
-          <samp style="background:#eef08a;padding:7px;border-radius:0px">{{comando.arg}}</samp>
+          <!-- <samp style="background:#eef08a;padding:7px;border-radius:0px">{{comando.arg}}</samp> -->
           <h2>Ejemplo:</h2>
           <video style="height:70%; width:75%" autoplay loop src="{{comando.demos}}"/>
         </article>

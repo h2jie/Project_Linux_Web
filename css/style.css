@@ -9,6 +9,10 @@ footer{
   box-sizing:border-box;
 }
 
+.hand{
+  cursor: pointer;
+}
+
 /*=========================================================================*/
 
 /*Pagina Principal*/
@@ -115,6 +119,7 @@ footer{
   border-radius: 5px;
   width: 900px;
   background: rgba(158, 158, 158, 0.13);
+
 }
 .n-img{
   margin-top: 20px;
