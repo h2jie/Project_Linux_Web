@@ -2,6 +2,14 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+@media screen and (max-device-width: 568px) {
+
+.txt-slider{
+  font-size: 10px
+}
+
+}
+
 footer{
   margin-top: 50px;
 }
