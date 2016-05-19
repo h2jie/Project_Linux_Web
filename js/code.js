@@ -1,15 +1,3 @@
-// //Argumentos de los comandos
-// var arg_cat = "cat > archivo.txt --> Si no eiste lo crea y edita y si existe lo sobreescribe";
-// var arg_ifconfig = "ifconfig -a --> Muestra todas las interfaces de red aunque esten caidas\n ifconfig -s --> Muestra una lista pequeña de interfaces";
-// var arg_ls = "Permite listar el contenido de un directorio o fichero.";
-// var arg_top = "Muestra los procesos de linux";
-// var arg_mkdir = "Crea un directorio nuevo tomando en cuenta la ubicación actual.";
-// var arg_cp = "Copia un archivo o directorio origen a un archivo o directorio destino. ";
-//
-// var salto = document.getElementsByTagName('<br>')
-// var arg_ifconfig = arg_ifconfig.replace('\n', salto);
-
-
 // descripciones de los comandos
 var desc_cat = 'Nos permite visualizar el contenido de un archivo de texto sin la necesidad de un editor.';
 var desc_ifconfig = 'Verifica el estado de la red';
@@ -21,13 +9,14 @@ var desc_cp = 'Copia un archivo o directorio origen a un archivo o directorio de
 // contenido de las noticias
 var cont_not1 = 'Pues sí: ayer se anunció el lanzamiento de Ubuntu 16.04 LTS Xenial Xerus y hoy os contamos las novedades. Sin prisa, pero sin pausa. Sin embargo, ya sabéis que el propósito de las versiones LTS no es el de deslumbrar con nuevas características, sino el de ofrecer un sistema estable y sobre todo de soporte prolongado: hasta 2021, cinco años; ergo, cuanto más tiempo pase y más actualizaciones reciba, más estable será. A nadie se le debería escapar que esa es la principal fortaleza e interés de Ubuntu 16.04 LTS (de ahí que nos empeñemos en acompañar la numeración con el LTS casi sin excepción).'
 
+var cont_not2 = 'OpenExpo 2016 concentrará en Madrid el próximo 2 de junio a empresas representativas del mundo de las tecnologías abiertas nacionales e internacionales (provenientes de países como Italia, Reino Unido, Francia y Portugal). Estas empresas participantes consiguen abarcar todo el espectro de soluciones de tecnologías Open Source del mercado.'
 
-
-
+var cont_not3 = 'Hoy se anunciado el lanzamiento de Electron 1.0, un framework diseñado para crear aplicaciones multiplataforma para el escritorio empleando HTML, CSS y JavaScript. Dicho de otro modo, sirve para crear webapps que puedan ejecutarse en GNU/Linux, Windows y Mac.'
 
 //imagenes de las noticias
-var img_not1 = '../media/images/noticia/noticia1/1.jpg'
-
+var img_not1 = '../media/images/noticia/ubuntuLTS.jpg'
+var img_not2 = '../media/images/noticia/openexpo.jpg'
+var img_not3 = '../media/images/noticia/electron-1.0.jpg'
 
 
 // videos de los comandos
@@ -66,21 +55,19 @@ new Vue({
       {nombre:'cp',       descripcion:desc_cp,       demos:demo_cp,       arg:''},
     ],
     noticias:[
-      {visible: false, nombre:'Las novedades de Ubuntu 16.04 LTS', descripcion: cont_not1, imagen:img_not1},
-      {visible: false, nombre:'noticia2', descripcion: 'noticia2 descripcion'},
-      {visible: false, nombre:'noticia3', descripcion: 'noticia3 descripcion'},
-      {visible: false, nombre:'noticia4', descripcion: 'noticia4 descripcion'},
-      {visible: false, nombre:'noticia5', descripcion: 'noticia5 descripcion'},
-      {visible: false, nombre:'noticia6', descripcion: 'noticia6 descripcion'},
-      {visible: false, nombre:'noticia7', descripcion: 'noticia7 descripcion'},
-      {visible: false, nombre:'noticia8', descripcion: 'noticia8 descripcion'},
-      {visible: false, nombre:'noticia9', descripcion: 'noticia9 descripcion'},
+      {nombre:'Las novedades de Ubuntu 16.04 LTS', descripcion: cont_not1, imagen:img_not1},
+      {nombre:'OpenExpo 2016 calienta motores',    descripcion: cont_not2, imagen:img_not2},
+      {nombre:'Disponible Electron 1.0',           descripcion: cont_not3, imagen:img_not3},
     ],
+    activeNews: 'Las novedades de Ubuntu 16.04 LTS'
 
   },
   methods: {
-    toggleNews: function(noticia){
-      noticia.visible = !noticia.visible;
+    setActiveNews: function(newsName){
+      this.activeNews = newsName;
+    },
+    isActive: function(newsName){
+      return (this.activeNews==newsName);
     }
   },
 })

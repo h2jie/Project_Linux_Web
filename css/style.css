@@ -114,10 +114,10 @@ footer{
 
 /*noticias2*/
 .noticia{
-  margin-top: 60px;
+  margin-top: 30px;
   border: 2px solid rgba(6, 8, 5, 0.17);
   border-radius: 5px;
-  width: 900px;
+  /*width: 900px;*/
   background: rgba(158, 158, 158, 0.13);
 
 }
@@ -128,8 +128,11 @@ footer{
 .contenido{
   margin-left: 8%;
   margin-right: 8%;
-
 }
+.seleccionada{
+  color: white;
+}
+
 /*=======================================================================*/
 
 /*Pagina de Historia*/
