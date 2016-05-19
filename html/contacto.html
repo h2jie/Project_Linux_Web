@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../fa/css/font-awesome.min.css">
+    <script src="../js/vuejs.js"></script>
+    <link rel="shortrcut icon" href="../media/images/inicio/bombilla.png">
+    <title>Contacto - Linux 101</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid" id="menu">
+        <nav id='top-menu' class="navbar navbar-inverse">
+          <!--Logotipo-->
+          <div class="navbar-header">
+            <img id='logo' src="../media/images/inicio/bombilla.png">
+          </div>
+          <!--Elementos del menu-->
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <!--Boton desplegable-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle='dropdown'>Distribuciones<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="fedora.html">Fedora</a></li>
+                <li><a href="ubuntu.html">Ubuntu</a></li>
+                <li><a href="ubuntu.html">Ubuntu</a></li>
+                <li><a href="opensuse.html">OpenSUSE</a></li>
+              </ul>
+            </li>
+            <li><a href="buscador.html">Comandos</a></li>
+            <li class="active"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="col-md-6 col-sm-12">
+        <h2>¿Quién somos?</h2>
+        <hr width="50%" align="left" style="height:1px; background:rgba(4, 3, 3, 0.28); margin-top:10px;">
+        <p style="text-align:justify;padding-right:10px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h2 style="margin-top:30px">¿Dónde estamos?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.3110704792593!2d2.145491051300389!3d41.38905040375261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2847eeed3b5%3A0xfcbfd60966182d80!2sInstitut+Escola+del+Treball!5e0!3m2!1ses!2ses!4v1463503290927" width="530" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <h2>Contactanos</h2>
+        <hr width="70%" align="left" style="height:1px; background:rgba(4, 3, 3, 0.28); margin-top:10px;">
+
+        <form class="form-horizontal" action="mailto:hjie1997@gmail.com" method="post">
+          <div class="form-group has-success">
+            <label for="nombre" class="control-label col-md-2">Nombre:</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+            </div>
+          </div>
+          <div class="form-group has-success">
+            <label class="control-label col-md-2" for="edad">Edad:</label>
+            <div class="col-md-10">
+              <select class="form-control" name="" id="edad">
+                <option value="">0-17</option>
+                <option value="">18-28</option>
+                <option value="">29-39</option>
+                <option value="">40-100</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group has-warning" >
+              <label class="control-label col-md-2" for="correo">Correo:</label>
+              <div class="col-md-10">
+                <input class="form-control" type="email" id="correo" placeholder="Correo">
+              </div>
+          </div>
+
+          <div class="form-group has-warning">
+            <label for="poblacion" class="control-label col-md-2">Población:</label>
+            <div class="col-md-10">
+              <input class="form-control" type="text" id="Poblacion" placeholder="Población">
+            </div>
+          </div>
+          <div class="form-group has-error">
+            <label class="control-label col-md-2" for="mensaje">Mensaje:</label>
+            <div class="col-md-10">
+              <textarea class="form-control" id="mensaje" style="max-width:500px;max-height:300px;height:150px;" placeholder="Escribe tu mensaje"></textarea>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-2">
+            <button class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+    <script src="../js/code.js" charset="utf-8"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

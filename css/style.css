@@ -72,6 +72,14 @@ footer{
   transform: translateY(0px);
 }
 
+
+.sm-div{
+  background: #961910;
+  width: 280px;
+  height: 222px;
+  padding-right: 10px;
+}
+
 #top-menu{
   font-size: 16px;
   border-radius: 0px;
