@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/vuejs.js"></script>
     <link rel="stylesheet" href="../css/animate.css">
-    <title>Noticias</title>
+    <link rel="shortrcut icon" href="../media/images/inicio/bombilla.png">
+    <title>Noticias de Linux - Linux 101</title>
   </head>
 
   <body>
@@ -16,7 +17,7 @@
         <nav id='top-menu' class="navbar navbar-inverse">
           <!--Logotipo-->
           <div class="navbar-header">
-            <img id='logo' src="../media/images/inicio/bombilla.png">
+            <a href="../index.html"><img id='logo' src="../media/images/inicio/bombilla.png"></a>
           </div>
 
           <!--Elementos del menu-->
@@ -35,12 +36,11 @@
               </ul>
             </li>
             <li><a href="buscador.html">Comandos</a></li>
-            <li><a href="contact.html">Contactanos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
   <div class="container-fluid">
 
     <!-- Tabla de noticias -->
@@ -67,14 +67,10 @@
   </div>
 
 
-  <!-- <pre>{{ $data | json}}</pre> -->
-
-
-
   <footer class="bg-primary">
     <div class="container">
       <p class="text-center">
-        <cite>Web by Hangjie, Daniel</cite><br>
+        <cite>Designed by Hangjie, Daniel</cite><br>
         <cite>Copyright (c) 2016 Copyright Holder All Rights Reserved.</cite>
       </p>
     </div>
@@ -85,3 +81,50 @@
   </body>
 
 </html>
+
+
+<!-- <table class="table"  style="border: 1px solid #337ab7">
+  <th class="text-center">Noticias</th>
+  <tr v-for='noticia in noticias'>
+    <td class="bg-primary"><button class='btn btn-primary' style='border:none' type="submit" @click="noticia.visible=!noticia.visible">{{noticia.nombre}}</button></td>
+  </tr>
+</table> -->
+
+<!-- <p>
+  Pero hay de todo un poco y además de Ubuntu están Kubuntu, Xubuntu, Lubuntu, Ubuntu GNOME y Ubuntu MATE. De todas os contamos lo más jugoso a continuación.
+</p>
+</div>
+
+<div class="contenido">
+<h3 style="margin-top:50px">Generalidades</h3>
+<p>
+  Ubuntu es una misma distribución con varios nombres que comparte prácticamente todo el engranaje técnico, por lo que salvo por los escritorios y alguna cosilla más, bajo el capó se encuentran los mismos componentes. A destacar el kernel Linux 4.4, también LTS, Xorg server 1.18 y Mesa 11.2. En cuanto a las aplicaciones más señaladas, ahí están Firefox 45 o LibreOffice 5.1, entre otras muchas actualizaciones en los más de 25.000 paquetes disponibles en los repositorios oficiales (en formato DEB).
+</p>
+<p>
+  El resto de novedades de fondo van dirigidas al ámbito servidor y nube, que es donde más está avanzando Ubuntu en los últimos tiempos. Así, Ubuntu 16.04 incluye la nueva versión de LXD para la gestión de contenedores, Docker 1.1 (no te pierdas nuestro tutorial Docker); las nuevas versiones de Juju, OpenStack y Ceph; y soporte para con los mainframes IBM Z y LinuxOne. Es normal, dicho sea de paso, que Canonical se esfuerce en mejorar en el único nicho de negocio que le está reportando beneficios de verdad.
+</p>
+<p>
+  Un cambio polémico enfocado en la misma dirección es la integración por defecto de soporte para el sistema de archivos ZFS. Richard Stallman (entre otros) ha declarado que “es imposible” hacer algo así; pero vaya si ha sido posible.
+</p>
+<p>
+  Para terminar con este apartado, el estreno de los paquetes Snap es uno que vive entre dos mundos y que puede acabar incidiendo de manera relevante en el escritorio. En el anterior enlace tenéis explicado el asunto. A modo de aperitivo, Mozilla ya ha confirmado que Firefox se suma a Snap (este detallito da para un debate de lo más interesante…).
+</p>
+<p>
+  Advertencia para los ussuarios de gráficas AMD, aunque ya se sabía: los controladores privativos se han quedado sin soporte; la única alternativa son los libres y para ofrecer unas mejores prestaciones los desarrolladores de Ubuntu han incorporado los del kernel Linux 4.5, que integra la previa de AMDGPU.
+</p>
+</div>
+
+<div class="contenido">
+<h3 style="margin-top:50px">Ubuntu 16.04 LTS</h3>
+<center>
+  <img class="n-img"src="../media/images/noticia/noticia1/2.jpg" alt="" />
+</center>
+<p>
+  Ubuntu en particular contiene muchas menos novedades de las que a muchos les gustaría encontrar, pero como hemos comentado más arriba, el objetivo los lanzamientos LTS es otro. Además, gran parte del trabajo de cara a futuro se lo está llevando últimamente el Ubuntu convergente, llamadlo Touch o como queráis. No obstante, los desarrolladores de Ubuntu parecen haber puesto especial atención en la corrección de errores y pequeñas funcionalidades con las que pulir la experiencia, si bien no da la sensación de cumplirse en todo momento tal premisa.
+</p>
+<p>
+  Por ejemplo, el Centro de Software de Ubuntu ha sido finalmente sustituido por el propio de GNOME, como también se sabía que iba a pasar. Le han cambiado el nombre por Ubuntu Software y asunto solucionado, de no ser porque aún está un poco verde. En cualquier caso, solo hay que esperar a que mejore y el haber dejado atrás al monstruo del software ya es un paso considerable.
+</p>
+<center>
+<img class="n-img"src="../media/images/noticia/noticia1/3.jpg" alt="" />
+</center> -->

@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animate.css">
     <script src="../js/vuejs.js"></script>
-    <title>openSUSE</title>
+    <link rel="shortrcut icon" href="../media/images/inicio/bombilla.png">
+    <title>Distribución openSUSE - Linux 101</title>
   </head>
-  <body background="../media/images/distribuciones/opensuse/opensuse-background-paper.png">
+  <body class="no-repeat" background="../media/images/distribuciones/opensuse/opensuse-background-paper.png">
     <header>
       <div class="container-fluid" id="menu">
         <nav id='top-menu' class="navbar navbar-inverse">
           <!--Logotipo-->
           <div class="navbar-header">
-            <img id='logo' src="../media/images/inicio/bombilla.png">
+            <a href="../index.html"><img id='logo' src="../media/images/inicio/bombilla.png"></a>
           </div>
           <!--Elementos del menu-->
           <ul class="nav navbar-nav">
@@ -33,7 +34,7 @@
               </ul>
             </li>
             <li><a href="buscador.html">Comandos</a></li>
-            <li><a href="contact.html">Contactanos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
@@ -54,47 +55,41 @@
 
       <div class="container os-descripcion animated" transition='animacion2' v-show='mostrar_mensaje'>
         <p>
-          Ubuntu es un sistema operativo basado en GNU/Linux y que se distribuye como software libre, el cual incluye su propio entorno de escritorio denominado Unity. Su nombre proviene de la ética homónima, en la que se habla de la existencia de uno mismo como cooperación de los demás.
+          La distribución openSUSE es un fácil de usar y completa distribución estable, de usos múltiples.
         </p>
         <p>
-          Está orientado al usuario promedio, con un fuerte enfoque en la facilidad de uso y en mejorar la experiencia del usuario. Está compuesto de múltiple software normalmente distribuido bajo una licencia libre o de código abierto. Estadísticas web sugieren que la cuota de mercado de Ubuntu dentro de las distribuciones Linux es, aproximadamente, del 49%, y con una tendencia a aumentar como servidor web.
+          Está dirigido a usuarios y desarrolladores que trabajan en el escritorio o servidor. Es ideal para principiantes, usuarios experimentados y los frikis de ultra por igual, en definitiva, es perfecto para todo el mundo! La última versión, openSUSE 42.1 Salto, cuenta con nuevas y mejoradas versiones de forma masiva todas las aplicaciones de servidor y escritorio útiles. Viene con más de 1.000 aplicaciones de código abierto.
         </p>
         <p>
-          Su patrocinador, Canonical, es una compañía británica propiedad del empresario sudafricano Mark Shuttleworth. Ofrece el sistema de manera gratuita, y se financia por medio de servicios vinculados al sistema operativo y vendiendo soporte técnico. Además, al mantenerlo libre y gratuito, la empresa es capaz de aprovechar los desarrolladores de la comunidad para mejorar los componentes de su sistema operativo. Extraoficialmente, la comunidad de desarrolladores proporciona soporte para otras derivaciones de Ubuntu, con otros entornos gráficos, como Kubuntu, Xubuntu, Ubuntu MATE, Edubuntu, Ubuntu Studio, Mythbuntu, Ubuntu GNOME y Lubuntu.
+          El proyecto es controlada por su comunidad y se basa en las contribuciones de los individuos, trabajando como probadores, escritores, traductores, expertos en usabilidad, artistas y embajadores o desarrolladores. El proyecto abarca una amplia variedad de tecnologías, las personas con diferentes niveles de experiencia, que hablan idiomas diferentes y tienen diferentes orígenes culturales.
         </p>
       </div>
 
       <h1 class="container caract-color-os">Características</h1>
 
       <div class="container caract-os">
-        <h3>Ubuntu y la comunidad</h3>
+        <h3>PulseAudio</h3>
         <p>
-          Los usuarios pueden participar en el desarrollo de Ubuntu, escribiendo código, solucionando bugs, probando versiones inestables del sistema, etc. Además, en febrero de 2008 se puso en marcha el sitio Brainstorm que permite a los usuarios proponer sus ideas y votar las del resto. También se informa de las ideas propuestas que se están desarrollando o están previstas.
+          PulseAudio se ha actualizado desde la versión 1.11 a la 3, que añade soporte para fuentes de audio Bluetooth, proporciona mejor calidad de audio AD2P, modo envolvente virtual (virtual surround) y soporte para más modos de cancelación de ruido. También tiene soporte para UCM, parámetros modificables en funcionamiento para filtros LADSPA, desplazamiento configurable de latencia de dispositivo y montones de mejoras de infraestructura.
         </p>
       </div>
       <div class="container caract-os">
-        <h3>Software incluido</h3>
+        <h3>Gestión de paquetes</h3>
         <p>
-          Ubuntu posee una gran gama de aplicaciones para llevar a cabo tareas cotidianas, entretenimiento, desarrollo y aplicaciones para la configuración de todo el sistema. La interfaz predeterminada de Ubuntu es Unity y utiliza en conjunto las aplicaciones de GNOME. Existen otras versiones extraoficiales mantenidas por la comunidad, con diferentes escritorios, y pueden ser instalados independientemente del instalado predefinido en Ubuntu.
+          El el apartado de gestión de paquetes, la versión 1.8.9 de zypper indica el progreso de su instalación. El backend PackageKit para zypper se ha reescrito, proporcionando una experiencia en la gestión de paquetes mucho mejor con las herramientas gráficas compatibles entre distribuciones.
         </p>
       </div>
       <div class="container caract-os">
-        <h3>Organización del software</h3>
+        <h3>Escritorio Plasma</h3>
         <p>
-          Ubuntu internamente divide todo el software en cuatro secciones, llamadas "componentes", para mostrar diferencias en licencias y la prioridad con la que se atienden los problemas que informen los usuarios. Estos componentes son: main, restricted, universe y multiverse.
-        </p>
-        <p>
-          De forma predeterminada se instalan paquetes de los componentes main y restricted Los paquetes del componente universe de Ubuntu generalmente se basan en los paquetes de la rama inestable (Sid) y en el repositorio experimental de Debian.
+          La actualización del área de trabajo de KDE trae consigo muchas mejoras para openSUSE. Para esta publicación el equipo de openSUSE para KDE ha creado un bonito tema oscuro para el escritorio. Si además te gustan los temas oscuros para las aplicaciones, puedes elegir el tema openSUSE dark en la sección Colores de Apariencia de las aplicaciones. Obsidian Coast es otro buen tema de color oscuro que merece la pena probar. Para quienes prefieren el tema aspecto y comportamiento estándar de Plasma, también está disponible el tema Aire que ha sido mejorado.
         </p>
       </div>
 
       <h1 class="container caract-color-os">Diseño de interfaz de usuario</h1>
       <div class="container caract-os" style="padding-top:15px">
         <p>
-          La actual interfaz de usuario de Ubuntu está compuesta por tres elementos: la barra superior para indicadores de sistema y menús (compuesta de Aplicaciones, Lugares y Sistema), el lanzador de aplicaciones al costado izquierdo, y el tablero que despliega accesos a aplicaciones y medios.
-        </p>
-        <p>
-          Además de la interfaz Unity, Canonical ha diseñado varios elementos de la interfaz: set de iconos Ubuntu Mono y Humanity, temas visuales ligeros, tipografía Ubuntu y sus variantes, barras de desplazamiento superpuestas, notificaciones OSD, pantalla de inicio de sesión Unity Greeter, gestos multitáctil uTouch, temas de sonido de inicio de sesión, y los menús globales de aplicaciones
+          openSUSE es la única entre las principales distribuciones de Linux que distribuye todos los escritorios principales en igualdad de condiciones: desarrollo y soporte oficiales. Estos incluyen GNOME, los escritorios Plasma (el escritorio por defecto) y Netbook de KDE, Xfce, LXDE y el completamente nuevo Enlightenment 17 (E17). Como de costumbre, esta publicación presenta novedades en el apartado gráfico desde el arranque hasta las pantallas de inicio de los programas. KDE en particular ha recibido un nuevo y bonito tema oscuro para el área de trabajo Plasma.
         </p>
       </div>
 
@@ -106,7 +101,7 @@
     <footer class="bg-primary">
       <div class="container">
         <p class="text-center">
-          <cite>Web by Hangjie, Daniel</cite><br>
+          <cite>Design by Hangjie, Daniel</cite><br>
           <cite>Copyright (c) 2016 Copyright Holder All Rights Reserved.</cite>
         </p>
       </div>
