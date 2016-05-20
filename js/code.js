@@ -59,8 +59,7 @@ new Vue({
       {nombre:'OpenExpo 2016 calienta motores',    descripcion: cont_not2, imagen:img_not2},
       {nombre:'Disponible Electron 1.0',           descripcion: cont_not3, imagen:img_not3},
     ],
-    activeNews: 'Las novedades de Ubuntu 16.04 LTS'
-
+    activeNews: 'Las novedades de Ubuntu 16.04 LTS',
   },
   methods: {
     setActiveNews: function(newsName){
@@ -69,5 +68,5 @@ new Vue({
     isActive: function(newsName){
       return (this.activeNews==newsName);
     }
-  },
+  }
 })

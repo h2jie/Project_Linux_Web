@@ -43,120 +43,30 @@
     <!-- <pre>{{$data | json}}</pre> -->
     <div class="container">
       <form class="navbar-form text-center bg-primary" style='padding:5px;border-radius:7px;width:400' role="search">
-          <span class="glyphicon glyphicon-search"></span>
-          <input class="form-control" style="width:400px" type='text' placeholder='Escribe un comando' v-model="mostrar_comando">
+        <span class="glyphicon glyphicon-search"></span>
+        <input class="form-control" style="width:400px" type='text' placeholder='Escribe un comando' v-model="mostrar_comando">
       </form>
+      <li class="dropdown" style="list-style:none">
+        <a href="#" class="dropdown-toggle" style="text-decoration:none;color:white" data-toggle='dropdown'>Comandos Admitidos<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li v-for="comando in comandos"><a href="#">{{comando.nombre}}</a></li>
+        </ul>
+      </li>
     </div>
 
-    <div class="container text-center animated" transition='animacion2' v-for="comando in comandos" v-show="mostrar_comando.toLowerCase()==comando.nombre">
-      <section class="main" id='content'>
-        <article style="font-size:18px;">
-          <h1><span class="glyphicon glyphicon-chevron-left"></span>{{comando.nombre}}<span class="glyphicon glyphicon-chevron-right"></span></h1>
-          <br>
-          <h2 style="margin-top:-20px">Descripción:</h2>
-          <p style="width:100%">{{comando.descripcion}}</p>
-          <!-- <samp style="background:#eef08a;padding:7px;border-radius:0px">{{comando.arg}}</samp> -->
-          <h2>Ejemplo:</h2>
-          <video style="height:70%; width:75%" autoplay loop src="{{comando.demos}}"/>
-        </article>
-      </section>
-    </div>
-
-    <!-- Panel de comandos -->
-    <div class="container" style="margin-top:80px;">
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
+      <div class="container text-center animated" transition='animacion2' v-for="comando in comandos" v-show="mostrar_comando.toLowerCase()==comando.nombre" v-show="isActive2(comando.nombre)">
+        <section class="main" id='content'>
+          <article style="font-size:18px;">
+            <h1><span class="glyphicon glyphicon-chevron-left"></span>{{comando.nombre}}<span class="glyphicon glyphicon-chevron-right"></span></h1>
+            <br>
+            <h2 style="margin-top:-20px">Descripción:</h2>
+            <p style="width:100%">{{comando.descripcion}}</p>
+            <!-- <samp style="background:#eef08a;padding:7px;border-radius:0px">{{comando.arg}}</samp> -->
+            <h2>Ejemplo:</h2>
+            <video style="height:70%; width:75%" autoplay loop src="{{comando.demos}}"/>
+          </article>
+        </section>
       </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-
-      <div class="panel panel-default col-lg-4 col-md-4 col-sm-6 col-xs-12">
-        <div class="panel-heading">
-          <h3>qwe</h3>
-        </div>
-        <div class="panel-body text-center">
-          free<br>
-          vmstat <br>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
 
 
     <script src="../js/code.js" charset="utf-8"></script>
