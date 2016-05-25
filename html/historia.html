@@ -49,7 +49,7 @@
     </div>
 
     <!-- Boton para mostrar tabla de Linux -->
-    <button type="button" name="button" style='margin-top: 20px' class="btn btn-primary col-md-12" @click='mostrar_linux = !mostrar_linux'>
+    <button type="button" name="button" style='margin-top: 20px' class="btn btn-primary col-md-12 col-sm-12 col-xs-12" @click='mostrar_linux = !mostrar_linux'>
       Mostrar informacion sobre Linux
       <span class="glyphicon glyphicon-chevron-up text-center" v-show='mostrar_linux == true' @click='mostrar_linux = !mostrar_linux' ></span>
       <span class="glyphicon glyphicon-chevron-down text-center" v-show='mostrar_linux == false' @click='mostrar_linux = !mostrar_linux' ></span>
@@ -101,7 +101,7 @@
     </div>
 
     <!-- Boton para mostrar tabla de GNU -->
-    <button type="button" name="button" style='margin-top: 20px' class="btn btn-primary col-md-12 text-center" @click='mostrar_GNU = !mostrar_GNU'>
+    <button type="button" name="button" style='margin-top: 20px' class="btn btn-primary col-md-12 col-sm-12 col-xs-12 text-center" @click='mostrar_GNU = !mostrar_GNU'>
       Mostrar informacion sobre GNU
       <span class="glyphicon glyphicon-chevron-up" v-show='mostrar_GNU == true' @click='mostrar_GNU = !mostrar_GNU' ></span>
       <span class="glyphicon glyphicon-chevron-down" v-show='mostrar_GNU == false' @click='mostrar_GNU = !mostrar_GNU' ></span>
