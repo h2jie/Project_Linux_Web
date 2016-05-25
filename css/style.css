@@ -13,6 +13,9 @@
 }
 }
 
+
+
+
 footer{
   margin-top: 50px;
 }
@@ -96,12 +99,12 @@ footer{
 
 
 .distribucion{
-  margin-top:65px;
-  padding-top: 65px;
+  margin-top: 10px;
+  padding-top:65px;
   padding-bottom: 65px;
 }
 
-.poster2{
+#poster3{
   background: url("../media/images/inicio/cyan.png");
 }
 
@@ -114,11 +117,20 @@ footer{
   transition-duration: 1s;
 }
 
+#poster2{
+  margin-top: 10px;
+  background: url("../media/images/inicio/gris.png");
+  padding-bottom: 65px;
+}
+
 .cu{
   background: #000000;
-  color: #1cbf32;
-  width: 25%;
-  border-radius: 100px;
+  color: white;
+  width: 300px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 7px;
+  text-align: center;
 }
 
 /*=======================================================================*/
