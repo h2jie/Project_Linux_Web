@@ -114,6 +114,13 @@ footer{
   transition-duration: 1s;
 }
 
+.cu{
+  background: #000000;
+  color: #1cbf32;
+  width: 25%;
+  border-radius: 100px;
+}
+
 /*=======================================================================*/
 
 /*Pagina de Noticias*/
