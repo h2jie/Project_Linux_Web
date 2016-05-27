@@ -46,12 +46,6 @@
         <span class="glyphicon glyphicon-search"></span>
         <input class="form-control" style="width:400px" type='text' placeholder='Escribe un comando' v-model="mostrar_comando">
       </form>
-      <li class="dropdown" style="list-style:none">
-        <a href="#" class="dropdown-toggle" style="text-decoration:none;color:white" data-toggle='dropdown'>Comandos Admitidos<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li v-for="comando in comandos"><a href="#">{{comando.nombre}}</a></li>
-        </ul>
-      </li>
     </div>
 
       <div class="container text-center animated" transition='animacion2' v-for="comando in comandos" v-show="mostrar_comando.toLowerCase()==comando.nombre" v-show="isActive2(comando.nombre)">
